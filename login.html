@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name=“viewport” content=“width=device-width,initial-scale=1.0”>
+  <link rel="stylesheet" type="text/css" href="app/css/login.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>ShareYourHome - Log In</title>
+  <link rel="shortcut icon" href="images/shareyourhome_logo.jpg" />
+</head>
+<body>
+  <div>
+    <header>
+      <div class="nav-div">
+        <nav>
+          <ul class="main-nav">
+            <li><a class="logo" href="#"><image class="logo_img" src="images/shareyourhome_logo.jpg"></a></li>
+            <li class="search-arrange">
+              <form class="search-form">
+                <input class="search-term" type="text" name="search" placeholder="Where do you want to go?" autocomplete="off">
+                <button class="search-submit" type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </li>
+            <li><a class="nav-btn" href="#">Sign Up</a></li>
+            <li><a class="nav-btn" href="#">Log In</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <article>
+      <div class="login-div">
+        <div class="login-box">
+          <h1 class="login-title">
+            Log In to ShareYourHome
+          </h1>
+          <form class="login-form">
+            <input class="login-email" type="text" name="login-email" placeholder="Email Address" autocomplete="off">
+            <input class="login-password" type="password" name="login-password" placeholder="Password" autocomplete="off">
+            <a class="forgot-password" href="#">Forgot password?</a>
+            <button class="login-submit" type="submit"><span>Log In</span></button>
+          </form>
+        </div>
+      </div>
+    </article>
+
+    <footer>
+      <div class="footer-arrange">
+        <ul>
+          <li><h1 class="footer-text-bold">About</h1></li>
+          <li><a class="footer-subtext" href="#">About ShareYourHome</a></li>
+          <li><a class="footer-subtext" href="#">Terms of Service</a></li>
+          <li><a class="footer-subtext" href="#">Privacy Policy</a></li>
+          <li><a class="footer-subtext" href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-arrange">
+        <h1 class="footer-text-bold">Language</h1>
+        <select id="lang-select" name="lang-select">
+          <option value="en" lang="en">English</option>
+          <option value="it" lang="it">Italiano</option>
+          <option value="fr" lang="fr">Français</option>
+        </select>
+      </div>
+      <div>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+      </div>
+    </footer>
+    <small class="footer-text footer-content">&copy; ShareYourHome</small>
+  </div>
+</body>
+</html>
