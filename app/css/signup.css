@@ -90,7 +90,7 @@ a.nav-btn:hover {
 }
 
 .main-nav .logo {
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 0px;
 	display: block;
 	padding: 0px;
@@ -99,7 +99,7 @@ a.nav-btn:hover {
 }
 
 .logo_img {
-  height: 60px;
+  height: 40px;
 }
 
 .search-form {
