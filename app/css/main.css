@@ -179,7 +179,7 @@ a.nav-btn:hover {
 /* Main Content */
 .coverimage {
   background: url("../../images/coverimage.jpg");
-  height: 340px;
+  height: 370px;
 	position: relative;
   background-size: cover;
   background-position: center;
@@ -202,13 +202,32 @@ a.nav-btn:hover {
 .cover-title {
   line-height: 1.2em;
   font-size: 4em;
-
 }
-.cover-text {
+
+.cover-text, .slideshow-text{
   line-height: 1.4em;
   max-width: 25em;
   font-size: 1.4em;
 	margin: 0.55em auto;
+	margin-bottom: 2em;
+}
+
+a.cover-text, a.slideshow-text{
+	font-size: 1em;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	border-radius: 30px;
+	padding: 10px 20px;
+	margin-top: 50px;
+}
+
+a.cover-text:link, a.cover-text:visited {
+	color: #ffffff;
+}
+
+a.cover-text:hover {
+	background-color: #ffffff;
+  color: black;
 }
 
 article {
@@ -303,24 +322,28 @@ article {
 }
 
 .community-projects {
-	margin: auto;
-	padding: 30px 0;
+	margin: 10px auto;
+	padding-bottom: 30px;
+}
+
+.article-title > h2 {
+	padding-bottom: 30px;
+	text-align: center;
+	color: #149074;
 }
 
 /* Slideshow container */
 .slideshow-container {
-	min-width: 600px;
-  max-width: 600px;
-	max-height: 400px;
-	min-height: 400px;
+	min-width: 100%;
+  max-width: 100%;
+	max-height: 600px;
+	min-height: 600px;
   position: relative;
-	margin: auto;
 }
 
 .mySlides{
  	width: 100%;
-  height: 400px;
-  min-height: 400px;
+  height: 600px;
   position: relative;
 }
 
@@ -335,13 +358,13 @@ article {
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 45.5%;
   width: auto;
-  padding: 16px;
+  padding: 30px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 28px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
@@ -386,15 +409,29 @@ article {
   to {opacity: 1}
 }
 
-.mission-statement {
-	background: #dddddd;
+.slideshow-info {
+	margin: auto;
+	margin-top: 30px;
+	text-align: center;
 }
 
-.mission-statement > p {
-	padding: 30px 10px;
-	font-family: Lato;
-	font-size: 18px;
-	line-height: normal;
+a.slideshow-text{
+	font-weight: bold;
+	color: #149074;
+	font-size: 1em;
+	border: 1px solid #149074;
+	border-radius: 30px;
+	padding: 10px 20px;
+	margin-top: 50px;
+}
+
+a.slideshow-text:link, a.slideshow-text:visited  {
+	color: #149074;
+}
+
+a.slideshow-text:hover {
+	background-color: #149074;
+  color: #ffffff;
 }
 
 /* Footer */
