@@ -6,28 +6,18 @@
   <link rel="stylesheet" type="text/css" href="app/css/signup.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.min.js"></script>
   <title>Fairbnb - Sign Up</title>
   <link rel="shortcut icon" href="images/fairbnb_logo.jpg" />
 </head>
 <body>
   <div>
-    <header>
-      <div class="nav-div">
-        <nav>
-          <ul class="main-nav">
-            <li><a class="logo" href="index.html"><image class="logo_img" src="images/fairbnb_logo.jpg"></a></li>
-            <li class="search-arrange">
-              <form class="search-form">
-                <input class="search-term" type="text" name="search" placeholder="Where do you want to go?" autocomplete="off">
-                <button class="search-submit" type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </li>
-            <li><a class="nav-btn" href="#">Sign Up</a></li>
-            <li><a class="nav-btn" href="login.html">Log In</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div id="nav-placeholder"></div>
+    <script>
+    $(document).ready(function() {
+      $('#nav-placeholder').load('sections/main_nav.html');
+    });
+    </script>
 
     <article>
       <div class="signup-div">
@@ -228,31 +218,12 @@
       </div>
     </article>
 
-    <footer>
-      <div class="footer-arrange">
-        <ul>
-          <li><h1 class="footer-text-bold">About</h1></li>
-          <li><a class="footer-subtext" href="#">About Fairbnb</a></li>
-          <li><a class="footer-subtext" href="#">Terms of Service</a></li>
-          <li><a class="footer-subtext" href="#">Privacy Policy</a></li>
-          <li><a class="footer-subtext" href="#">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-arrange">
-        <h1 class="footer-text-bold">Language</h1>
-        <select id="lang-select" name="lang-select">
-          <option value="en" lang="en">English</option>
-          <option value="it" lang="it">Italiano</option>
-          <option value="fr" lang="fr">Français</option>
-        </select>
-      </div>
-      <div>
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-        <a href="#" class="fa fa-instagram"></a>
-      </div>
-    </footer>
-    <small class="footer-text footer-content">&copy; Fairbnb</small>
+    <div id="footer-placeholder"></div>
+    <script>
+    $(document).ready(function() {
+      $('#footer-placeholder').load('sections/footer.html');
+    });
+    </script>
   </div>
 </body>
 </html>
