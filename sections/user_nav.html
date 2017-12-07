@@ -5,13 +5,13 @@
         <li><a class="logo" onclick="switchPage('index.html','logged')"><image class="logo_img" src="images/fairbnb_logo.jpg"/></a></li>
         <li class="search-arrange">
           <form class="search-form">
-            <input class="search-term" type="text" name="search" placeholder="Where do you want to go?" autocomplete="off"></input>
-            <button class="search-submit" type="submit"><i class="fa fa-search"></i></button>
+            <input id="search-input" class="search-term" type="text" name="search" onkeydown="searchFalso('results.html', 'logged', 'button', event)" placeholder="Where do you want to go?" autocomplete="off"></input>
+            <button class="search-submit" type="button" onclick="searchFalso('results.html', 'logged', 'click', event)"><i class="fa fa-search"></i></button>
           </form>
         </li>
         <li><a class="nav-btn" href="#">Add a new listing</a></li>
         <li><a href="#"><image class="user-photo" src="images/john.jpg"/></a></li>
-        <li><a class="nav-btn" href="#">John Cerce</a></li>
+        <li><a class="nav-btn" onclick="logoutFalso()">Log Out</a></li>
       </ul>
     </nav>
   </div>
