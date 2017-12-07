@@ -79,11 +79,6 @@ table {
 	text-decoration: none;
   font-family: Lato;
   font-weight: bold;
-	cursor: pointer;
-}
-
-.main-nav > span {
-	cursor: pointer;
 }
 
 a.nav-btn:link, a.nav-btn:visited  {color: #149074;}
@@ -193,16 +188,6 @@ a.nav-btn:hover {
 }
 
 /* Main Content */
-.coverimage {
-  background: url("../../images/coverimage.jpg");
-  height: 370px;
-	position: relative;
-  background-size: cover;
-  background-position: center;
-  align-items: center;
-  justify-content: center;
-}
-
 .cover-content{
   text-align: center;
   margin: auto;
@@ -246,7 +231,101 @@ a.cover-text:hover {
   color: black;
 }
 
+.filter-box {
+  float: left;
+  display: inline;
+  margin-left: 30px;
+  margin-right: 20px;
+  margin-top: 40px;
+  height: auto;
+  background-color: #149074;
+  padding: 10px 10px;
+  width: 19%;
+  color: #ffffff;
+}
+
+.datePicker > h1 {
+  margin: 5px 0px;
+  font-size: 20px;
+}
+
+.salsa-calendar-input {
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-family: Lato;
+  padding: 3px 5px;
+}
+
+.guest-filter {
+  margin-bottom: 10px;
+}
+
+.guest-filter > h1 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.guest-filter > h3 {
+  margin: 10px 0 5px 0;
+  font-size: 16px;
+}
+
+.guest-select {
+  margin-top: 3px;
+	padding: 5px;
+  padding-bottom: 5px;
+	text-decoration: none;
+  font-family: Lato;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 1px solid #ccc;
+  width: 60px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  background-position:
+    calc(100% - 11.5px) calc(1em - 0.55px),
+    calc(100% - 6.5px) calc(1em - 0.55px),
+    calc(100% - 2em) 0.25em;
+  background-size:
+    5px 5px,
+    5px 5px,
+    1px 1.5em;
+  background-repeat: no-repeat;
+}
+
+.guest-select:focus {
+  outline: none;
+}
+
+.hometype-filter > h1, .projecttype-filter > h1 {
+  margin: 15px 0 5px 0;
+  font-size: 20px;
+}
+
+.checkbox-div > span {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.hometype-checkbox, .projecttype-checkbox {
+  margin: 5px 0px;
+  height: 16px;
+  width: 16px;
+  top: 0;
+  left: 0;
+  background-color: #eee;
+}
+
 article {
+  font-family: Lato;
   background: #eaeaea;
 }
 
@@ -254,7 +333,6 @@ article {
 	margin-left: 80px;
   margin-right: 80px;
 	padding-top: 60px;
-	font-family: Lato;
 	font-size: 32px;
 	font-weight: bold;
 }
@@ -265,8 +343,8 @@ article {
 }
 
 .article-wrapper {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 0px;
+  margin-right: 0px;
   padding-top: 20px;
   padding-bottom: 50px;
 }
@@ -277,13 +355,14 @@ article {
   flex-wrap: wrap;
 }
 
-.flex-grid-thirds .col {
-  width: 25.5%;
+.flex-grid-thirds {
+  width: 75.5%;
 }
 
 .col {
+  width: 30.5%;
   margin: auto;
-	margin-top: 50px;
+	margin-top: 39px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   background: #fff;
@@ -338,7 +417,7 @@ article {
 }
 
 .community-projects {
-	margin: auto;
+	margin: 10px auto;
 	padding-bottom: 30px;
 }
 
@@ -346,108 +425,6 @@ article {
 	padding-bottom: 30px;
 	text-align: center;
 	color: #149074;
-}
-
-/* Slideshow container */
-.slideshow-container {
-	min-width: 100%;
-  max-width: 100%;
-	max-height: 600px;
-	min-height: 600px;
-  position: relative;
-}
-
-.mySlides{
- 	width: 100%;
-  height: 600px;
-  position: relative;
-}
-
-.banner_holderImage{
-  height: 100%;
-  position:relative;
-	background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 45.5%;
-  width: auto;
-  padding: 30px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 28px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-.slideshow-info {
-	margin: auto;
-	margin-top: 30px;
-	text-align: center;
-}
-
-a.slideshow-text{
-	font-weight: bold;
-	color: #149074;
-	font-size: 1em;
-	border: 1px solid #149074;
-	border-radius: 30px;
-	padding: 10px 20px;
-	margin-top: 50px;
-}
-
-a.slideshow-text:link, a.slideshow-text:visited  {
-	color: #149074;
-}
-
-a.slideshow-text:hover {
-	background-color: #149074;
-  color: #ffffff;
 }
 
 /* Footer */

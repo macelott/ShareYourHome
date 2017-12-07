@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name=“viewport” content=“width=device-width,initial-scale=1.0”/>
+  <link rel="stylesheet" type="text/css" href="app/css/results.css">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+  <script src="app/js/falso.js"></script>
+  <script src="app/salsa-calendar-master/build/SalsaCalendar.min.js"></script>
+	<link rel="stylesheet" href="app/salsa-calendar-master/build/SalsaCalendar.min.css">
+  <title>Fairbnb</title>
+  <link rel="shortcut icon" href="images/fairbnb_logo.jpg"/>
+</head>
+<body>
+  <div>
+    <div id="nav-placeholder"></div>
+
+    <article>
+      <div class="article-wrapper">
+        <div class="filter-box">
+          <ul>
+            <li class="datePicker">
+              <h1>Check In</h1>
+              <input type="text" id="checkin" class="salsa-calendar-input" autocomplete="off" name="arrival" value="" readonly/>
+              <h1>Check Out</h1>
+              <input type="text" id="checkout" class="salsa-calendar-input" autocomplete="off" name="departure" value="" />
+            </li>
+            <li class="guest-filter">
+              <h1>Guests:</h1>
+              <h3>Adults</h3>
+              <select class="guest-select" name="adult-select">
+                <option value="1" selected="selected">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+              </select>
+              <h3>Children</h3>
+              <select class="guest-select" name="child-select">
+                <option value="0" selected="selected">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </li>
+            <li class="hometype-filter">
+              <h1>Home Type</h1>
+              <div class="checkbox-div">
+                <input class="hometype-checkbox" type="checkbox" name="entire-home" value="1">
+                <span>Entire Home</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="hometype-checkbox" type="checkbox" name="private-room" value="1">
+                <span>Private Room</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="hometype-checkbox" type="checkbox" name="shared-room" value="1">
+                <span>Shared Room</span>
+              </div>
+            </li>
+            <li class="projecttype-filter">
+              <h1>Project Type</h1>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="culture" value="1">
+                <span>Arts, Culture, Humanities</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="communityDev" value="1">
+                <span>Community Development</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="education" value="1">
+                <span>Education</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="environment" value="1">
+                <span>Environment</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="health" value="1">
+                <span>Health</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="rights" value="1">
+                <span>Human and Civil Rights</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="services" value="1">
+                <span>Human Services</span>
+              </div>
+              <div class="checkbox-div">
+                <input class="projecttype-checkbox" type="checkbox" name="research-policy" value="1">
+                <span>Research and Public Policy</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex-grid-thirds">
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/tintoretto.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Ca' Tintoretto</a>
+              </h2>
+              <p>Restoration of Viale Garibaldi</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;114 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/colonnette.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Colonnette</a>
+              </h2>
+              <p>Restoration of Viale Garibaldi</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;116 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/drapier.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Drapier</a>
+              </h2>
+              <p>Refill Venice</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;87 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/saoner.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Saoner</a>
+              </h2>
+              <p>MOSES Project</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;131 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/fontego.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Ca' Del Fontego</a>
+              </h2>
+              <p>MOSES Project</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;109 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/Sensale.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Sensale</a>
+              </h2>
+              <p>Restoration of Viale Garibaldi</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;122 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/monastero.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Ca' Del Monastero</a>
+              </h2>
+              <p>Refill Venice</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;67 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/tagiapiera.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Tagiapiera</a>
+              </h2>
+              <p>Refill Venice</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;105 per night</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="box-photo">
+              <a href="#"><image class="box-photo-img" src="images/varoter.jpg"></a>
+            </div>
+            <div class="box-body">
+              <h2>
+                <a href="#">Varoter</a>
+              </h2>
+              <p>MOSES Project</p>
+              <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <p>&euro;94 per night</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <div id="footer-placeholder"></div>
+    <script>
+    $(document).ready(function() {
+      $('#footer-placeholder').load('sections/footer.html');
+
+      var calendar_from = new SalsaCalendar({
+          inputId: 'checkin',
+          lang: 'en',
+          range: {
+              min: 'today'
+          },
+          calendarPosition: 'right',
+          fixed: false,
+          connectCalendar: true
+      });
+
+      var calendar_to = new SalsaCalendar({
+          inputId: 'checkout',
+          lang: 'en',
+          range: {
+              min: 'today'
+          },
+          calendarPosition: 'right',
+          fixed: false
+      });
+
+      new SalsaCalendar.Connector({
+        from: calendar_from,
+        to: calendar_to,
+        maximumInterval: 365,
+        minimumInterval: 1
+      });
+
+      /*new SalsaCalendar.NightsCalculator({
+        from: calendar_from,
+        to: calendar_to,
+        nightsNo: 'nights-no'
+      });*/
+
+    });
+    </script>
+  </div>
+</body>
+</html>
