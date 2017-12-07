@@ -53,6 +53,10 @@ table {
   margin: 0 15px;
 }
 
+.page-link:hover {
+	cursor: pointer;
+}
+
 .main-nav {
   display: -webkit-flex;
   display: flex;
@@ -244,6 +248,11 @@ a.cover-text:hover {
   color: #ffffff;
 }
 
+.filter-box > h1 {
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
 .datePicker > h1 {
   margin: 5px 0px;
   font-size: 20px;
@@ -263,7 +272,7 @@ a.cover-text:hover {
 }
 
 .guest-filter > h1 {
-  margin-top: 15px;
+  margin-top: 16px;
   font-size: 20px;
 }
 
@@ -306,7 +315,7 @@ a.cover-text:hover {
 }
 
 .hometype-filter > h1, .projecttype-filter > h1 {
-  margin: 15px 0 5px 0;
+  margin: 16px 0 5px 0;
   font-size: 20px;
 }
 
@@ -322,6 +331,30 @@ a.cover-text:hover {
   top: 0;
   left: 0;
   background-color: #eee;
+}
+
+.filter-apply {
+	font-family: Lato;
+	margin-top: 10px;
+	width: 100%;
+	font-size: 1em;
+	text-decoration: none;
+	border: 1px solid #ffffff;
+	border-radius: 30px;
+	padding: 10px 20px;
+	background-color: #ffffff;
+}
+
+button.filter-apply:link, button.filter-apply:visited {
+	color: black;
+	background-color: #ffffff;
+}
+
+button.filter-apply:hover {
+  color: black;
+	cursor: pointer;
+	background-color: lightgray;
+	border-color: lightgray;
 }
 
 article {
