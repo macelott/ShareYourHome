@@ -20,6 +20,7 @@
     <article>
       <div class="article-wrapper">
         <div class="filter-box">
+          <h1>Filters</h1>
           <ul>
             <li class="datePicker">
               <h1>Check In</h1>
@@ -117,19 +118,22 @@
                 <span>Research and Public Policy</span>
               </div>
             </li>
+            <li>
+              <button class="filter-apply" type="button" onclick="searchFalso('results.html', 'logged', 'click', event)">Apply</button>
+            </li>
           </ul>
         </div>
 
         <div class="flex-grid-thirds">
           <div class="col">
             <div class="box-photo">
-              <a href="#"><image class="box-photo-img" src="images/tintoretto.jpg"></a>
+              <a class="page-link" onclick="switchPage('singlelisting.html','logged')"><image class="box-photo-img" src="images/tintoretto.jpg"></a>
             </div>
             <div class="box-body">
               <h2>
-                <a href="#">Ca' Tintoretto</a>
+                <a class="page-link" onclick="switchPage('singlelisting.html','logged')">Ca' Tintoretto</a>
               </h2>
-              <p>Restoration of Viale Garibaldi</p>
+              <p>MOSES Project</p>
               <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
               <p>&euro;114 per night</p>
             </div>
