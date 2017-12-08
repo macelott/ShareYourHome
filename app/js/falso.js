@@ -107,3 +107,15 @@ function searchFalso(url, parameterName, type, event) {
   }
   document.location.href = fullUrl;
 }
+
+function applyFilter () {
+  var listings = document.getElementsByClassName('col');
+  var len = listings.length;
+  var i;
+
+  for (i = 0; i < len; i++) {
+    if (listings[i].id !== 'noHide') {
+      listings[i].style.visibility = 'hidden';
+    }
+  }
+}

@@ -53,6 +53,10 @@ table {
   margin: 0 15px;
 }
 
+.page-link:hover {
+	cursor: pointer;
+}
+
 .main-nav {
   display: -webkit-flex;
   display: flex;
