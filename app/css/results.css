@@ -360,6 +360,7 @@ button.filter-apply:hover {
 article {
   font-family: Lato;
   background: #eaeaea;
+	min-height: 900px;
 }
 
 .article-title {
@@ -386,6 +387,7 @@ article {
   display: flex;
 	flex-flow: row;
   flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 .flex-grid-thirds {
@@ -393,8 +395,8 @@ article {
 }
 
 .col {
-  width: 30.5%;
-  margin: auto;
+  max-width: 30.5%;
+	margin: 0 12.5px;
 	margin-top: 39px;
   border: 1px solid #e6e6e6;
   border-radius: 4px;

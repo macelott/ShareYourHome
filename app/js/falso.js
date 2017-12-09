@@ -115,7 +115,7 @@ function applyFilter () {
 
   for (i = 0; i < len; i++) {
     if (listings[i].id !== 'noHide') {
-      listings[i].style.visibility = 'hidden';
+      listings[i].style.display = 'none';
     }
   }
 }
